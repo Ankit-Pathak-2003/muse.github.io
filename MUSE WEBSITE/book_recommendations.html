@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Muse</title>
+	<link rel="icon" type="image/jpg" href="MUSE LOGO THIN.jpg">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Muse LitSoc Thapar</h1>
+		<nav>
+			<ul>
+			  <li><a href="index.html">Home</a></li>
+			  <li>
+				<a href="#">Explore &#9662;</a>
+				<ul class="dropdown">
+				  <li><a href="book_recommendations.html">Book Recommendations</a></li>
+				  <li>
+					<a href="#">Events &#9662;</a>
+					<ul class="dropdown">
+					  <li><a href="#">Hosted Events</a></li>
+					  <li><a href="#">Past Events</a></li>
+					  <li><a href="#">Upcoming Events</a></li>
+					</ul>
+				  </li>
+				</ul>
+			  </li>
+			  <li><a href="Contact Us.html">Contact Us</a></li>
+			</ul>
+		  </nav>
+	</header>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			var dropdown = document.querySelectorAll('nav ul li a');
+			dropdown.forEach(function(el) {
+			  el.addEventListener('click', function(e) {
+				var nextSibling = this.nextElementSibling;
+				if (nextSibling.classList.contains('dropdown')) {
+				  e.preventDefault();
+				  if (nextSibling.style.display === 'block') {
+					nextSibling.style.display = 'none';
+				  } else {
+					nextSibling.style.display = 'block';
+				  }
+				}
+			  });
+			});
+		  });
+		</script>
+	<main>
+        <section>
+			<article>
+				<h3>Grapes Of Wrath</h3>
+				<p class="post-meta">Posted on September 19, 2022</p>
+				<p>"The Grapes of Wrath" is a novel by John Steinbeck published in 1939, which tells the story of a poor family's journey from Oklahoma to California during the Great Depression. The novel explores themes of poverty, social injustice, and the resilience of the human spirit in the face of hardship.</p>
+				<a href="https://www.instagram.com/p/Circ2dGj3wy/" class="read-more">Read More</a>
+			</article>
+			<article>
+				<h3>The Trail</h3>
+				<p class="post-meta">Posted on September 26, 2022</p>
+				<p>Joseph K wakes up one day, and finds himself in a somewhat strange predicament. Two guards enter his house and tell him that he is under arrest, but is free to go to work and go on about his life. The cause of arrest isn’t explained to him, and he is informed that he’ll be approached for all legal proceedings in due time. And so begins The Trial by Franz Kafka.​</p>
+				<a href="https://www.instagram.com/p/Ci-MklCjGOR/" class="read-more">Read More</a>
+			</article>
+            <article>
+				<h3>The Bell Jar</h3>
+				<p class="post-meta">Posted on October 17, 2022</p>
+				<p>The Bell Jar reads like a confession, yet for Sylvia Plath, there is no sense of salvation. Through Esther Greenwood, Plath writes a revelatory narrative drawing from her obsessive-compulsive tendencies and quiet suicidal ideations. The Bell Jar is all the more poignant, since it was her only foray into novel form, published just a month before her death.</p>
+				<a href="https://www.instagram.com/p/CjPlcC2DyMm/" class="read-more">Read More</a>
+			</article>
+			<article>
+				<h3>Silmarillion</h3>
+				<p class="post-meta">Posted on October 17, 2022</p>
+				<p>Silmarillion is a prequel to two of Tolkien's most well-known works; The Hobbit and The Lord of the Rings. Book tells the accounts of gods, elves, mankind, and dwarves of middle earth, shining light (pun intended) on their origins, legends, and various downfalls. Like other works of Tolkein, the center of the story is yet another artifact; not a ring of power, not Arkenstone but the treasures of heavens themselves: Silmarills.</p>
+				<a href="https://www.instagram.com/p/Cjz9PA3Lm69/" class="read-more">Read More</a>
+			</article>
+            <article>
+				<h3>Moby Dick</h3>
+				<p class="post-meta">Posted on October 17, 2022</p>
+				<p>“Legend has it that there are two Moby-Dicks.”
+                    This is how the scholar John Bryant starts his essay in the Cambridge Companion to Herman Melville on Melville’s magnum opus, Moby-Dick. But why must we be bothered? What does this novel of a bygone era have in store for us? Even though we have a lot to look forward to, some of us also have a lot to look back on too. This is what Moby-Dick has to offer.</p>
+				<a href="https://www.instagram.com/p/CkXuc5sLhy_/" class="read-more">Read More</a>
+			</article>
+            <article>
+				<h3>God of small things</h3>
+				<p class="post-meta">Posted on October 17, 2022</p>
+				<p>'The secret of being a bore is to tell everything.' Voltaire said. This book is an appropriate example of how true that adage is. Like a loving mother with only one piece of pie, she withholds information and doles it out at the most opportune moments, yet never does the plot become incomprehensible. In fact, we lap it all up and can't wait for the next serving. To even attempt to summarize the plot would be to take everything away from it because, well, surprise!, the book really is about the Small Things. And the Really Big Things.</p>
+				<a href="https://www.instagram.com/p/Ckp5O7nr0Si/" class="read-more">Read More</a>
+			</article>
+            <article>
+				<h3>For Whom The Bell Tolls</h3>
+				<p class="post-meta">Posted on November 21, 2022</p>
+				<p>Narratives about war often fall into a trap of inadvertently advertising the subject they are meant to criticize. The inevitable spectacle, the bleak human drama, the morose tragedy and the grand displays of the sounds and the furies that war brings give them an almost a romantic, albeit farcical tinge. Hemingway defies such pretensions. Hemingway portrays the Spanish Civil War with such deft acuteness, such heightened sense of reality that to experience For Whom the Bells Toll is to witness all the horrors that man inflicts.</p>
+				<a href="https://www.instagram.com/p/ClOkhPtjw5H/" class="read-more">Read More</a>
+			</article>
+		</section>
+		
+    	</main>
+	<footer>
+		<p>&copy; 2023 My Blog</p>
+	</footer>
+</body>
+</html>
