@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Muse</title>
+	<link rel="icon" type="image/jpg" href="MUSE LOGO THIN.jpg">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Muse LitSoc</h1>
+            <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                  <a href="#">Explore &#9662;</a>
+                  <ul class="dropdown">
+                    <li><a href="book_recommendations.html">Book Recommendations</a></li>
+                    <li>
+                      <a href="#">Events &#9662;</a>
+                      <ul class="dropdown">
+                        <li><a href="#">Hosted Events</a></li>
+                        <li><a href="#">Past Events</a></li>
+                        <li><a href="#">Upcoming Events</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+              </ul>
+            </nav>
+    </header>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var dropdown = document.querySelectorAll('nav ul li a');
+          dropdown.forEach(function(el) {
+            el.addEventListener('click', function(e) {
+              var nextSibling = this.nextElementSibling;
+              if (nextSibling.classList.contains('dropdown')) {
+                e.preventDefault();
+                if (nextSibling.style.display === 'block') {
+                  nextSibling.style.display = 'none';
+                } else {
+                  nextSibling.style.display = 'block';
+                }
+              }
+            });
+          });
+        });
+      </script>
+      
+	<main>
+        <section>
+            <h2>Gen Secs</h2>
+            <div class="picture-box">
+				<img src="Anmol Chhabra.jpeg" alt="Picture 1">
+				<p>Anmol Chhabra</p>
+                <p>we both went for a chocolate date, but only one of us survived.</p>
+			</div>
+            <div class="picture-box">
+				<img src="Suryansh Tiwari.jpeg" alt="Picture 1">
+				<p>Suryansh Tiwari</p>
+                <p>I find myself agreeing with Mark Twain when he said, "I didn't have time to write a short letter, so I wrote a long one instead."</p>
+			</div>
+			<h2>Joint Secs</h2>
+			<div class="picture-box">
+				<img src="ishita nandwani.jpeg" alt="Picture 1">
+				<p>Ishita Nandwani</p>
+                <p>So much for being a writer and not being able to define myself. </p>
+			</div>
+			<div class="picture-box">
+				<img src="Garima.jpg" alt="Picture 2">
+				<p>Garima Minocha</p>
+                <p>"Bhai yeh caption contest chal rha hai kya?" </p>
+			</div>
+            <div class="picture-box">
+				<img src="Akshita.jpg" alt="Picture 3">
+				<p>Akshita Garg</p>
+                <p>Can we pretend that this never happened? </p>
+			</div>
+		</section>
+
+		<section>
+			<h2>WHAT IS MUSE?</h2>
+			<p>MUSE is an English Literature Society that brings together individuals who share a passion for the written word. Our community consists of readers, writers, scholars, and enthusiasts who are dedicated to exploring and celebrating literature in all its forms.</p>
+            <p>At MUSE, we believe that literature has the power to connect people, transcend boundaries, and transform lives. Through our various events and activities, we aim to promote the study and appreciation of literature and encourage creativity and self-expression.</p>
+            <p>Our society was founded with the goal of fostering a love for literature and language among students and the wider community. We host a range of events and activities throughout the year, including book clubs, reading groups, poetry readings, writing workshops, and guest lectures. These events provide opportunities for members to engage in stimulating discussions, exchange ideas, and gain insights into the cultural and historical contexts that have shaped some of the greatest works of literature in the English language.</p>
+            <p>One of our most popular events is our monthly book club, where we select a book of the month to read and discuss together. We encourage members to share their perspectives and interpretations of the book, and we explore themes, motifs, and literary techniques in depth. Our reading groups provide a space for members to discuss their favorite books and authors, exchange recommendations, and discover new and exciting works.</p>
+            <p>We also host poetry readings and writing workshops that provide a platform for members to share their creative work, receive feedback, and connect with other writers and poets. Our workshops cover a range of topics, from exploring different writing styles and techniques to mastering the art of storytelling.</p>
+            <p>In addition to these events, we invite guest lecturers to share their knowledge and insights on various aspects of literature and language. These lectures cover a range of topics, from the history of English literature to contemporary issues in the publishing industry.</p>
+            <p>At MUSE, we are committed to promoting creativity and self-expression among our members. We publish a literary magazine and run a blog where members can showcase their writing and connect with a wider audience. Our literary magazine features fiction, poetry, essays, and book reviews, and our blog covers a range of topics, from writing tips and techniques to book recommendations and literary news.</p>
+            <p>MUSE is a supportive and inclusive community that welcomes members from all backgrounds and interests. Whether you are a student, an academic, or a literature enthusiast, we invite you to join us and become a part of our community. By joining MUSE, you will have access to a range of resources, including a network of like-minded individuals, opportunities to enhance your skills and knowledge, and a platform to showcase your creativity and share your love for literature.</p>
+            <a href="https://www.instagram.com/muse.litsoc.thapar/" class="read-more">Visit Instagram Page</a>
+            <a href="https://chat.whatsapp.com/IR0il0heaW8FRDxIa5NNPq" class="read-more">Join Whatsapp Group</a>
+            <div class="picture-box">
+				<img src="MUSE LOGO THIN.jpg" alt="Picture 3">
+			</div>
+		</section>
+		
+    <section>
+        <h2>Conveners</h2>
+        <div class="picture-box">
+            <img src="Ankit Pathak.jpg" alt="Picture 3">
+            <p>Ankit Pathak</p>
+            <p>Mujhe Kya me to Batak hun</p>
+        </div>
+        <div class="picture-box">
+            <img src="Shashwat.jpg" alt="Picture 3">
+            <p>Shashwat Singh</p>
+            <p>Batteries Included :) </p>
+        </div>
+        <div class="picture-box">
+            <img src="Komal.jpeg" alt="Picture 3">
+            <p>Komal Dua</p>
+            <p>Where do I apply to switch realms?</p>
+        </div>
+        <div class="picture-box">
+            <img src="Avantika.jpeg" alt="Picture 3">
+            <p>Avantika Trehan</p>
+            <p>Once stole wine from a Church </p>
+            
+        </div>
+        <div class="picture-box">
+            <img src="useless.jpg" alt="Picture 3">
+            <p>Tejas Kohli</p>
+            <p>Could do with a few scruples</p>
+        </div>
+    </section>
+	</main>
+	<footer>
+		<p>&copy; 2023 My Blog</p>
+	</footer>
+</body>
+</html>

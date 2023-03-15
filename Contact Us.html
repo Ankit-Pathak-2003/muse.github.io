@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Muse</title>
+	<link rel="icon" type="image/jpg" href="MUSE LOGO THIN.jpg">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Contact Us</h1>
+		<nav>
+			<ul>
+			  <li><a href="index.html">Home</a></li>
+			  <li>
+				<a href="#">Explore &#9662;</a>
+				<ul class="dropdown">
+				  <li><a href="book_recommendations.html">Book Recommendations</a></li>
+				  <li>
+					<a href="#">Events &#9662;</a>
+					<ul class="dropdown">
+					  <li><a href="#">Hosted Events</a></li>
+					  <li><a href="#">Past Events</a></li>
+					  <li><a href="#">Upcoming Events</a></li>
+					</ul>
+				  </li>
+				</ul>
+			  </li>
+			  <li><a href="Contact Us.html">Contact Us</a></li>
+			</ul>
+		  </nav>
+	</header>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			var dropdown = document.querySelectorAll('nav ul li a');
+			dropdown.forEach(function(el) {
+			  el.addEventListener('click', function(e) {
+				var nextSibling = this.nextElementSibling;
+				if (nextSibling.classList.contains('dropdown')) {
+				  e.preventDefault();
+				  if (nextSibling.style.display === 'block') {
+					nextSibling.style.display = 'none';
+				  } else {
+					nextSibling.style.display = 'block';
+				  }
+				}
+			  });
+			});
+		  });
+		</script>
+	<main>
+        <section>
+			<article>
+				<h3>Visit Our Main Site</h3>
+				
+				<a href="https://sites.google.com/thapar.edu/litsoc/home" class="read-more">Litsoc Thapar Site</a>
+			</article>
+			<article>
+				<h3>Check Out LitSoc Thapar's Official Instagram page</h3>
+				<a href="https://www.instagram.com/litsoc.thapar/" class="read-more">LitSoc Thapar Instagram</a>
+			</article>
+            <article>
+				<h3>Check Out Muse's Instagram page</h3>
+				<a href="https://www.instagram.com/muse.litsoc.thapar/" class="read-more">Muse Instagram</a>
+			</article>
+			<article>
+				<h3>Join our Comminity!</h3>
+				<a href="https://chat.whatsapp.com/IR0il0heaW8FRDxIa5NNPq" class="read-more">Muse Whatsapp Group</a>
+			</article>
+		</section>
+		
+    	</main>
+	<footer>
+		<p>&copy; 2023 My Blog</p>
+	</footer>
+</body>
+</html>
